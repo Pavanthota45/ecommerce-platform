@@ -1,0 +1,347 @@
+/* =========================================
+   GLOBAL E-COMMERCE APPLICATION STYLES
+========================================= */
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* =========================================
+   COMMON PAGE CONTAINER
+========================================= */
+
+.page-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   COMMON BUTTONS
+========================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 16px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-success {
+  color: #ffffff;
+  background: #16a34a;
+}
+
+.btn-success:hover {
+  background: #15803d;
+}
+
+.btn-danger {
+  color: #ffffff;
+  background: #dc2626;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background: #d97706;
+}
+
+.btn-warning:hover {
+  background: #b45309;
+}
+
+.btn-secondary {
+  color: #1f2937;
+  background: #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* =========================================
+   COMMON FORM
+========================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  color: #374151;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  color: #111827;
+  background: #ffffff;
+}
+
+/* =========================================
+   COMMON MODAL
+========================================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  z-index: 9999;
+}
+
+.modal {
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  padding: 24px;
+
+  background: #ffffff;
+  border-radius: 14px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.modal h2,
+.modal h3 {
+  color: #111827;
+}
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-success {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.status-warning {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.status-danger {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.status-info {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.status-neutral {
+  color: #374151;
+  background: #f3f4f6;
+}
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.dashboard-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 20px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.dashboard-card .value {
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-input {
+  color: #111827;
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  padding: 10px 14px;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 14px;
+
+  color: #ffffff;
+  background: #2563eb;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.link-button:hover {
+  color: #ffffff;
+  background: #1d4ed8;
+}
+
+/* =========================================
+   EMPTY / ERROR / LOADING
+========================================= */
+
+.empty-state {
+  padding: 40px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  background: #ffffff;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+.error-message {
+  padding: 12px 16px;
+
+  color: #991b1b;
+  background: #fee2e2;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+}
+
+.success-message {
+  padding: 12px 16px;
+
+  color: #166534;
+  background: #dcfce7;
+
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .page-container {
+    padding: 18px;
+  }
+
+  .section,
+  .dashboard-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-container {
+    padding: 12px;
+  }
+
+  .modal {
+    padding: 18px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
